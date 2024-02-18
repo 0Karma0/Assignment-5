@@ -16,7 +16,7 @@
 </head>
 <body class="font-raleway">
     <!--header section start-->
-    <header>
+    <header id="head">
         <!--nav start-->
         <nav class="w-[95%] m-auto">
             <div class="navbar bg-base-100">
@@ -67,7 +67,7 @@
     <!--header section end-->
 
     <!--main section start-->
-    <main class="mt-20">
+    <main class="mt-20" id="main">
         <!--coupon start-->
         <h2 class="text-center font-bold text-4xl mb-10">Best offers for you</h2>
         <div class="lg:w-1/2 lg:flex m-auto justify-between">
@@ -106,7 +106,7 @@
         <!--coupon end-->
 
         <!--bus ticket price start-->
-        <hr>
+        <hr class="m-auto w-[90%]">
         <h2 class="text-center font-bold text-4xl mb-10 mt-5">Bus Travel</h2>
         <p class="mb-8 text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined</p>
         <div class="lg:flex mt-10 lg:space-x-8 m-auto items-center justify-around lg:w-4/5">
@@ -147,11 +147,11 @@
         <!--bus ticket price end-->
 
         <!--ticket select start-->
-        <div class="lg:flex mt-10 lg:space-x-8 m-auto items-center justify-around lg:w-5/6">
+        <div class="lg:flex mt-10 lg:space-x-8 m-auto items-center justify-around lg:w-5/6 mb-10">
           <div class="mt-20">
             <h2 class="text-2xl font-bold mb-8">Select your seat</h2>
             <hr class="mb-4">
-            <div class="flex lg:w-[600px] justify-between mb-3">
+            <div class="lg:flex lg:w-[600px] justify-between mb-3">
               <div class="flex">
                 <img src="images/seat-gray.png" alt="">
                 <p class="text-gray-500">Available</p>
@@ -165,20 +165,20 @@
             <div class="text-right">
               <button class="btn px-8"><img src="images/wheel.png" alt=""></button>
             </div>
-            <div class="flex mt-8 gap-10">
-              <button class="btn btn-outline btn-success px-10">A 1</button>
-              <button class="btn btn-outline btn-success px-10">A 2</button>
-              <button class="btn btn-outline btn-success px-10">A 3</button>
-              <button class="btn btn-outline btn-success px-10">A 4</button>
+            <div class="lg:flex mt-8 gap-10">
+              <button id="A1" class="btn btn-outline btn-success px-10">A 1</button>
+              <button id="A2" class="btn btn-outline btn-success px-10">A 2</button>
+              <button id="A3" class="btn btn-outline btn-success px-10">A 3</button>
+              <button id="A4" class="btn btn-outline btn-success px-10">A 4</button>
             </div>
-            <div class="flex mt-4 gap-10">
-              <button class="btn btn-outline btn-success px-10">B 1</button>
-              <button class="btn btn-outline btn-success px-10">B 2</button>
-              <button class="btn btn-outline btn-success px-10">B 3</button>
-              <button class="btn btn-outline btn-success px-10">B 4</button>
+            <div class="lg:flex mt-4 gap-10">
+              <button id="B1" class="btn btn-outline btn-success px-10">B 1</button>
+              <button id="B2" class="btn btn-outline btn-success px-10">B 2</button>
+              <button id="B3" class="btn btn-outline btn-success px-10">B 3</button>
+              <button id="B4" class="btn btn-outline btn-success px-10">B 4</button>
             </div>
           </div>
-          <div class="w-[500px]">
+          <div class="lg:w-[500px]">
             <h2 class="text-2xl font-bold mb-8">Select your seat</h2>
             <hr>
             <div>
@@ -219,14 +219,14 @@
                 <span>0</span>
               </div>
             <div class="mt-5 text-center">
-              <button class="btn btn-success text-white px-24">Next</button>
+              <button class="btn btn-success text-white px-24" onclick="next()">Next</button>
             </div>
           </div>
         </div>
         <!--ticket select end-->
     </main>
     <!--Next section start-->
-    <div class="lg:w-3/6 lg:mt-56 mt-48 m-auto hidden">
+    <div id="confirm" class="lg:w-3/6 lg:mt-56 mt-48 m-auto hidden">
       <div class="card bg-gray-300">
         <div class="card-body items-center text-center">
           <img src="images/success.png" alt="">
@@ -244,6 +244,7 @@
 
     <!--scripts-->
     <script src="scripts/ticket.js"></script>
+    <script src="scripts/utility.js"></script>
     <script src="https://kit.fontawesome.com/4b53a1c37b.js" crossorigin="anonymous"></script>
 </body>
 </html>
