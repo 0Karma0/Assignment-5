@@ -117,7 +117,7 @@
                 <h2>Greenline Paribahan</h2>
                 <p>Coach-009-WEB ! AC_Business</p>
               </div>
-              <a class="btn bg-green-100 text-green-600 lg:ml-36"><img src="images/seat-green.png" alt=""> 40 Seats left</a>
+              <a class="btn bg-green-100 text-green-600 lg:ml-36"><img src="images/seat-green.png" alt="">8 Seats left</a>
             </div>
             <div class="mt-5 flex justify-between bg-gray-200 p-5">
               <p>Route</p>
@@ -146,17 +146,104 @@
         </div>
         <!--bus ticket price end-->
 
-        
+        <!--ticket select start-->
+        <div class="lg:flex mt-10 lg:space-x-8 m-auto items-center justify-around lg:w-5/6">
+          <div class="mt-20">
+            <h2 class="text-2xl font-bold mb-8">Select your seat</h2>
+            <hr class="mb-4">
+            <div class="flex lg:w-[600px] justify-between mb-3">
+              <div class="flex">
+                <img src="images/seat-gray.png" alt="">
+                <p class="text-gray-500">Available</p>
+              </div>
+              <div class="flex">
+                <img src="images/seat-green-filled.png" alt="">
+                <p class="text-green-500">Selected</p>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="text-right">
+              <button class="btn px-8"><img src="images/wheel.png" alt=""></button>
+            </div>
+            <div class="flex mt-8 gap-10">
+              <button class="btn btn-outline btn-success px-10">A 1</button>
+              <button class="btn btn-outline btn-success px-10">A 2</button>
+              <button class="btn btn-outline btn-success px-10">A 3</button>
+              <button class="btn btn-outline btn-success px-10">A 4</button>
+            </div>
+            <div class="flex mt-4 gap-10">
+              <button class="btn btn-outline btn-success px-10">B 1</button>
+              <button class="btn btn-outline btn-success px-10">B 2</button>
+              <button class="btn btn-outline btn-success px-10">B 3</button>
+              <button class="btn btn-outline btn-success px-10">B 4</button>
+            </div>
+          </div>
+          <div class="w-[500px]">
+            <h2 class="text-2xl font-bold mb-8">Select your seat</h2>
+            <hr>
+            <div>
+              <div class="mt-5 flex justify-between bg-gray-200 p-5">
+                <div class="flex gap-1">
+                  <p>Seat</p>
+                  <button class="w-3 rounded-full text-white bg-green-500">
+                    <span>0</span>
+                  </button>
+                </div>
+                <p>fare</p>
+              </div>
+              <div class="mt-5 flex justify-between bg-gray-200 p-5">
+                <p>Total Price</p>
+                <span>0</span>
+              </div>
+              <div class="flex">
+              <div class="flex">
+                  <div class="bg-white p-6 rounded-md flex">
+                    <div class="join">
+                      <input
+                        id="input-field"
+                        class="input input-bordered join-item w-40"
+                        placeholder="Discount"
+                      />
+                      <button
+                        id="apply-btn"
+                        class="btn join-item rounded-md bg-green-500 text-white font-bold"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                </div>
+              </div>
+              </div>
+              <div class="mt-5 flex justify-between bg-gray-200 p-5">
+                <p>Grand Total</p>
+                <span>0</span>
+              </div>
+            <div class="mt-5 text-center">
+              <button class="btn btn-success text-white px-24">Next</button>
+            </div>
+          </div>
+        </div>
+        <!--ticket select end-->
     </main>
+    <!--Next section start-->
+    <div class="lg:w-3/6 lg:mt-56 mt-48 m-auto hidden">
+      <div class="card bg-gray-300">
+        <div class="card-body items-center text-center">
+          <img src="images/success.png" alt="">
+          <h2 class="card-title text-green-500">success</h2>
+          <p class="text-white text-center w-96">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you.</p>
+          <p>Shortly You will find confirmation in your email</p>
+          <div class="card-actions justify-end">
+            <button class="btn bg-green-500 px-20 text-white">Accept</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Next section end-->
     <!--main section end-->
 
-    <!--footer section start-->
-    <footer>
-
-    </footer>
-    <!--footer section end-->
-
     <!--scripts-->
+    <script src="scripts/ticket.js"></script>
     <script src="https://kit.fontawesome.com/4b53a1c37b.js" crossorigin="anonymous"></script>
 </body>
 </html>
