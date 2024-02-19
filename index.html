@@ -45,7 +45,7 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn bg-green-100 text-green-600">Bus<i class="fa-solid fa-bus text-green-600"></i></a>
+                  <a class="btns p-3 bg-green-100 text-green-600">Bus<i class="fa-solid fa-bus text-green-600"></i></a>
                 </div>
               </div>
         </nav>
@@ -58,7 +58,7 @@
               <div class="">
                 <h1 class="mb-8 lg:text-5xl font-extrabold text-white">End-to-End Travel with <br><span class="text-green-500">Bus Travel</span></h1>
                 <p class="mb-8">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined</p>
-                <button class="btn bg-green-500 text-black font-bold">Buy Tickets</button>
+                <button class="btns p-5 bg-green-500 text-black font-bold">Buy Tickets</button>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@
             </div>
         </div>
         <div class="mt-12 text-center mb-10">
-            <button class="btn btn-outline btn-success">See All Offers</button>
+            <button class="btns p-5 btn-outline btn-success">See All Offers</button>
         </div>
         <!--coupon end-->
 
@@ -117,7 +117,7 @@
                 <h2>Greenline Paribahan</h2>
                 <p>Coach-009-WEB ! AC_Business</p>
               </div>
-              <a class="btn bg-green-100 text-green-600 lg:ml-36"><img src="images/seat-green.png" alt="">8 Seats left</a>
+              <a class="btns px-5 bg-green-100 text-green-600 lg:ml-36"><img src="images/seat-green.png" alt=""><span id="left">8</span> Seats left</a>
             </div>
             <div class="mt-5 flex justify-between bg-gray-200 p-5">
               <p>Route</p>
@@ -186,14 +186,16 @@
                 <div class="flex gap-1">
                   <p>Seat</p>
                   <button class="w-3 rounded-full text-white bg-green-500">
-                    <span>0</span>
+                    <span id="selectedCount">0</span>
                   </button>
                 </div>
                 <p>fare</p>
               </div>
+              <div id="container">
+              </div>
               <div class="mt-5 flex justify-between bg-gray-200 p-5">
                 <p>Total Price</p>
-                <span>0</span>
+                <span id="total-cost">0</span>
               </div>
               <div class="flex">
               <div class="flex">
@@ -206,7 +208,7 @@
                       />
                       <button
                         id="apply-btn"
-                        class="btn join-item rounded-md bg-green-500 text-white font-bold"
+                        class="btns p-1 join-item rounded-md bg-green-500 text-white font-bold"
                       >
                         Apply
                       </button>
@@ -216,7 +218,7 @@
               </div>
               <div class="mt-5 flex justify-between bg-gray-200 p-5">
                 <p>Grand Total</p>
-                <span>0</span>
+                <span id="grand-total">0</span>
               </div>
             <div class="mt-5 text-center">
               <button class="btn btn-success text-white px-24" onclick="next()">Next</button>

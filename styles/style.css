@@ -4,3 +4,17 @@
 .font-inter{
     font-family: 'inter', sans-serif;
 }
+li{
+    display: flex;
+    gap: 420px;
+    width: 450px;
+    margin: auto;
+    text-align: center;
+    list-style: numeric;
+}
+@media screen  and (max-width:400px){
+    li{
+        width: 250px;
+        gap: 250px; 
+    }
+}
